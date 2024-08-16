@@ -4,16 +4,20 @@ import { Box, Typography } from "@mui/material";
 import { useTheme } from "../../useTheme";
 
 const Description = (props: DescriptonProps) => {
-  const { title, description } = props;
+  const { title, description, style } = props;
   const { themePallete } = useTheme();
 
   return (
-    <Box className="w-full p-2 bg-green flex flex-col">
+    <Box
+      sx={style ? style.container : {}}
+      className="w-full p-2 bg-green flex flex-col"
+    >
       <Box className="w-full flex justify-start">
         <Typography
-          fontSize={"28px"}
-          color={themePallete.primary.color}
+          fontSize={"24px"}
+          color={themePallete.primary.secondaryColor}
           fontWeight={700}
+          sx={style?.title}
         >
           {title}
         </Typography>

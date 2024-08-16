@@ -10,6 +10,7 @@ const themePallete = {
     background: "#0f172a",
     secondaryBackground: "#1e293b",
     color: "#6366f1",
+    secondaryColor: "#a5b4fc",
     borderColor: "#334155",
     textColor: "#FFFFFF",
   },
